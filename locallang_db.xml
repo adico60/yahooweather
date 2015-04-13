@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'yahooweather'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.list_type_pi1">Yahoo! Weather Widget</label>
+			<label index="flexform_sheet_general">General Settings</label>
+			<label index="flexform_sheet_admin">Admin Settings</label>
+			<label index="flexform_sheet_credits">Credits</label>
+			<label index="flexform_unit">Units</label>
+			<label index="flexform_dateFormat">Date Format</label>
+			<label index="flexform_dateFormat_de">Day.Month.Year</label>
+			<label index="flexform_dateFormat_us">Month/Day/Year</label>
+			<label index="flexform_timeFormat">Time Format</label>
+			<label index="flexform_enableCache">Use API Cache</label>
+			<label index="flexform_enableCache_true">On</label>
+			<label index="flexform_enableCache_false">Off</label>
+			<label index="flexform_clearCache">Delete Cache files older x days</label>
+			<label index="flexform_cacheTime">Cache Time (min)</label>
+			<label index="flexform_templateFile">Template File</label>
+			<label index="flexform_timeout">API Timeout (s)</label>
+			<label index="flexform_location">Yahoo! Location Code</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tt_content.list_type_pi1">Yahoo! Weather Widget</label>
+			<label index="flexform_sheet_general">Allgemeine Einstellungen</label>
+			<label index="flexform_sheet_admin">Admin Einstellungen</label>
+			<label index="flexform_sheet_credits">Credits</label>
+			<label index="flexform_unit">Einheiten</label>
+			<label index="flexform_dateFormat">Datumsformat</label>
+			<label index="flexform_dateFormat_de">Tag.Monat.Jahr</label>
+			<label index="flexform_dateFormat_us">Monat/Tag/Jahr</label>
+			<label index="flexform_timeFormat">Zeitformat</label>
+			<label index="flexform_enableCache">Verwende API Cache</label>
+			<label index="flexform_enableCache_true">An</label>
+			<label index="flexform_enableCache_false">Aus</label>
+			<label index="flexform_clearCache">Lösche API-Cache Dateien die älter als x Tage sind</label>
+			<label index="flexform_cacheTime">Cache Zeit (min)</label>
+			<label index="flexform_templateFile">Template Datei</label>
+			<label index="flexform_timeout">API Timeout (s)</label>
+			<label index="flexform_location">Yahoo! Standort Code</label>
+		</languageKey>
+		<languageKey index="en" type="array">
+			<label index="tt_content.list_type_pi1">Yahoo! Weather Widget</label>
+			<label index="flexform_sheet_general">General Settings</label>
+			<label index="flexform_sheet_admin">Admin Settings</label>
+			<label index="flexform_sheet_credits">Credits</label>
+			<label index="flexform_unit">Units</label>
+			<label index="flexform_dateFormat">Date Format</label>
+			<label index="flexform_dateFormat_de">Day.Month.Year</label>
+			<label index="flexform_dateFormat_us">Month/Day/Year</label>
+			<label index="flexform_timeFormat">Time Format</label>
+			<label index="flexform_enableCache">Use API Cache</label>
+			<label index="flexform_enableCache_true">On</label>
+			<label index="flexform_enableCache_false">Off</label>
+			<label index="flexform_clearCache">Delete Cache files older x days</label>
+			<label index="flexform_cacheTime">Cache Time (min)</label>
+			<label index="flexform_templateFile">Template File</label>
+			<label index="flexform_timeout">API Timeout (s)</label>
+			<label index="flexform_location">Yahoo! Location Code</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="tt_content.list_type_pi1">Widget Yahoo! Météo</label>
+			<label index="flexform_sheet_general">Réglages Généraux</label>
+			<label index="flexform_sheet_admin">Paramètres administrateur</label>
+			<label index="flexform_sheet_credits">Crédits</label>
+			<label index="flexform_unit">Unités</label>
+			<label index="flexform_dateFormat">Format De Date</label>
+			<label index="flexform_dateFormat_de">Jour.Mois.Année</label>
+			<label index="flexform_dateFormat_us">Mois.Jour.Année</label>
+			<label index="flexform_timeFormat">Format de temps</label>
+			<label index="flexform_enableCache">Utiliser l'API de cache</label>
+			<label index="flexform_enableCache_true">Activé</label>
+			<label index="flexform_enableCache_false">Désactivé</label>
+			<label index="flexform_clearCache">Supprimer les fichiers de cache de l'API qui sont âgés de plus de x jours</label>
+			<label index="flexform_cacheTime">Temps du Cache (min)</label>
+			<label index="flexform_templateFile">Modèle de fichier</label>
+			<label index="flexform_timeout">API Timeout (s)</label>
+			<label index="flexform_location">Code de la localité (Yahoo!)</label>
+		</languageKey>
+	</data>
+</T3locallang>

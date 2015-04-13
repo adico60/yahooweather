@@ -1,0 +1,117 @@
+<!-- Template Documentation
+
+	@ Version 1.0
+	@ Author: Juergen Furrer <juergen.furrer@gmail.com>
+	@ BasedOn: yahooweatherwidget from Ulrich Barrot <u.barrot@insiders-technologies.de>
+	
+	* Localization:
+	
+	To access labels of the locallang_db.xml you can use the {LL:labelname} syntax tags, which are automatically replaced 
+	by the defined language labels.
+	
+	* Template marker
+	
+	The extension converts all Yahoo! API Marker automatically into typo3 templatemarker. Some numeric values are 	
+	additionally converted into text for better presentation. Time values are converted into 12 / 24 h format, depending
+	on your configuration settings. The following list shows available markers and a brief description.
+	
+	Marker								Description
+	
+	###location_city###
+	###units_distance###				Unit for distances
+	###units_pressure###				Unit for pressure
+	###units_speed###					Unit for speed
+	###units_temperature###				Unit for temperature
+	###wind_chill###					Wind chill factor
+	###wind_direction###				Wind Direction (Degree)
+	###wind_direction_text###			Wind Direction as Text
+	###wind_speed##						Wind Speed
+	###atmosphere_humidity###			Atmosphere himidity
+	###atmosphere_pressure###			Atmosphere pressure
+	###atmosphere_rising###				Atmosphere rising faktor
+	###atmosphere_visibility###			Atmosphere visibility faktor
+	###astronomy_sunrise###				Time of Sunrise
+	###astronomy_sunset###				Tine of Sunset
+	###item_lat###						Latitude of given Yahoo Location Key
+	###item_long###						Longitude of given Yahoo Location Key
+	###item_condition_code###			Yahoo weather condition code (current weather)
+	###item_condition_date###			Todays date 		
+	###item_condition_temp###			Temperature (current weather)
+	###item_condition_text###			Current weather condition as text
+	###item_condition_image###			Current weather image
+	###item_forecast_0_code###			Yahoo weather condition code (today's forecast)
+	###item_forecast_0_date###			Todays date (today's forecast)
+	###item_forecast_0_day###			Todays date (today's forecast)
+	###item_forecast_0_high###			High temperature (today's forecast)
+	###item_forecast_0_low###			Low temperature (today's forecast)
+	###item_forecast_0_text##			Forecast condition as text (today's forecast)
+	###item_forecast_0_condition###		Forecast condition (today's forecast)
+	###item_forecast_0_image###			Forecast Image (today's forecast)
+	###item_forecast_1_code###			# (tomorrow's forecast)
+	###item_forecast_1_date###			# (tomorrow's forecast)
+	###item_forecast_1_day###			# (tomorrow's forecast)
+	###item_forecast_1_high###			# (tomorrow's forecast)
+	###item_forecast_1_low###			# (tomorrow's forecast)
+	###item_forecast_1_text###			# (tomorrow's forecast)
+	###item_forecast_1_condition###		# (tomorrow's forecast)
+	###item_forecast_1_image###			# (tomorrow's forecast)
+	(...)
+	
+ Marker Documentation end -->
+
+<!-- ###TEMPLATE### begin -->
+<div class="yahooweather">
+	<h1>{LL:headline} ###location_city###</h1>
+	<h2>{LL:current_headline}</h2>
+	<div class="weatherImage">
+		<img src="###item_condition_image###" alt="###item_condition_text###"/>
+	</div>
+	<div class="weatherText">
+		<b>###item_condition_text###</b><br/>
+		{LL:temperature_label}: ###item_condition_temp### °###units_temperature###<br/>
+		{LL:pressure_label}: ###atmosphere_pressure### ###units_pressure###<br/>
+		{LL:wind_speed_label}: ###wind_speed### ###units_speed###<br/>
+		{LL:wind_direction_label}: ###wind_direction_text### (###wind_direction###°)<br/>
+		{LL:humidity_label}: ###atmosphere_humidity### %<br/>
+		{LL:visibility_label}: ###atmosphere_visibility### ###units_distance###
+	</div>
+	<br style="clear:both"/>
+	<h2>{LL:forecast_0_headline}</h2>
+	<div class="weatherImage">
+		<img src="###item_forecast_0_image###" alt="###item_forecast_0_condition###"/>
+	</div>
+	<div class="weatherText">
+			<b>###item_forecast_0_condition###</b><br/>
+			{LL:temperature_label}: ###item_forecast_0_low### - ###item_forecast_0_high### °###units_temperature###<br/>
+			{LL:sunset_label}: ###astronomy_sunrise###<br/>
+			{LL:sunrise_label}: ###astronomy_sunset###
+	</div>
+	<br style="clear:both"/>
+	<h2>{LL:forecast_1_headline}</h2>
+	<div class="weatherImage">
+		<img src="###item_forecast_1_image###" alt="###item_forecast_1_condition###"/>
+	</div>
+	<div class="weatherText">
+		<b>###item_forecast_1_condition###</b><br/>
+		{LL:temperature_label}: ###item_forecast_1_low### - ###item_forecast_1_high### °###units_temperature###<br/>
+	</div>
+	<br style="clear:both"/>
+	<h2>{LL:forecast_2_headline}</h2>
+	<div class="weatherImage">
+		<img src="###item_forecast_2_image###" alt="###item_forecast_2_condition###"/>
+	</div>
+	<div class="weatherText">
+		<b>###item_forecast_2_condition###</b><br/>
+		{LL:temperature_label}: ###item_forecast_2_low### - ###item_forecast_2_high### °###units_temperature###<br/>
+	</div>
+	<br style="clear:both"/>
+	<p><small><a href="###item_link###" target="_blank">© Yahoo! météo news</a></small></p>
+</div>
+<!-- ###TEMPLATE### end -->
+
+<!-- In case there is an error while processing the weather data-->
+<!-- ###ERROR### begin -->
+<div class="yahooweather">
+	<h1>{LL:error_headline}</h1>
+</div>
+<!-- ###ERROR### end -->

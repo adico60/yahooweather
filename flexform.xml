@@ -1,0 +1,260 @@
+<T3DataStructure>
+	<meta>
+	<langDisable>1</langDisable>
+	</meta>
+  <sheets>
+    <generaloptions>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>LLL:EXT:yahooweather/locallang_db.xml:flexform_sheet_general</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+        <location>
+            <TCEforms>
+              <label>LLL:EXT:yahooweather/locallang_db.xml:flexform_location</label>
+              <config>
+                <type>input</type>
+                <size>7</size>
+              </config>
+              <default>GMXX3828</default>
+              <eval>trim</eval>
+            </TCEforms>
+          </location>
+          <unit>
+            <TCEforms>
+              <label>LLL:EXT:yahooweather/locallang_db.xml:flexform_unit</label>
+              <config>
+                <type>select</type>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">Typoscript</numIndex>
+                    <numIndex index="1">Typoscript</numIndex>
+                  </numIndex>
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">°C, km, km/h</numIndex>
+                    <numIndex index="1">c</numIndex>
+                  </numIndex>
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">°F, mi, mph</numIndex>
+                    <numIndex index="1">f</numIndex>
+                  </numIndex>
+                </items>   
+                <maxitems>1</maxitems>
+                <size>1</size>
+              </config>
+            </TCEforms>
+          </unit> 
+          <dateFormat>
+            <TCEforms>
+              <label>LLL:EXT:yahooweather/locallang_db.xml:flexform_dateFormat</label>
+              <config>
+                <type>select</type>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">Typoscript</numIndex>
+                    <numIndex index="1">Typoscript</numIndex>
+                  </numIndex>
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:yahooweather/locallang_db.xml:flexform_dateFormat_de</numIndex>
+                    <numIndex index="1">d.m.Y</numIndex>
+                  </numIndex>
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">LLL:EXT:yahooweather/locallang_db.xml:flexform_dateFormat_us</numIndex>
+                    <numIndex index="1">m/d/Y</numIndex>
+                  </numIndex>
+                </items>   
+                <maxitems>1</maxitems>
+                <size>1</size>
+              </config>
+            </TCEforms>
+          </dateFormat> 
+          <timeFormat>
+            <TCEforms>
+              <label>LLL:EXT:yahooweather/locallang_db.xml:flexform_timeFormat</label>
+              <config>
+                <type>select</type>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">Typoscript</numIndex>
+                    <numIndex index="1">Typoscript</numIndex>
+                  </numIndex>
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">24 h</numIndex>
+                    <numIndex index="1">24</numIndex>
+                  </numIndex>
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">12 h</numIndex>
+                    <numIndex index="1">12</numIndex>
+                  </numIndex>
+                </items>   
+                <maxitems>1</maxitems>
+                <size>1</size>
+              </config>
+            </TCEforms>
+          </timeFormat> 
+          <templateFile>
+			<TCEforms>
+				<label>LLL:EXT:yahooweather/locallang_db.xml:flexform_templateFile</label>
+				<config>
+					<type>input</type>
+					<eval>trim</eval>
+					<wizards type="array">
+						<_PADDING>2</_PADDING>
+						<link type="array">
+							<type>popup</type>
+							<title>Link</title>
+							<icon>link_popup.gif</icon>
+							<script>browse_links.php?mode=wizard&amp;act=file</script>
+							<params type="array">
+								<blindLinkOptions>page,url,mail,spec</blindLinkOptions>
+							</params>
+							<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+						</link>
+					</wizards>
+				</config>
+			</TCEforms>
+		</templateFile>
+        </el>
+      </ROOT>
+    </generaloptions>
+    <adminoptions>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>LLL:EXT:yahooweather/locallang_db.xml:flexform_sheet_admin</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+        	<enableCache>
+            <TCEforms>
+              <label>LLL:EXT:yahooweather/locallang_db.xml:flexform_enableCache</label>
+              <config>
+                <type>select</type>
+                <items type="array">
+                	<numIndex index="0" type="array">
+                    <numIndex index="0">Typoscript</numIndex>
+                    <numIndex index="1">Typoscript</numIndex>
+                  </numIndex>
+                <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:yahooweather/locallang_db.xml:flexform_enableCache_true</numIndex>
+                    <numIndex index="1">1</numIndex>
+                  </numIndex>
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">LLL:EXT:yahooweather/locallang_db.xml:flexform_enableCache_false</numIndex>
+                    <numIndex index="1">0</numIndex>
+                  </numIndex>
+                </items>   
+                <maxitems>1</maxitems>
+                <size>1</size>
+              </config>
+            </TCEforms>
+          </enableCache> 
+        <cacheTime>
+            <TCEforms>
+              <label>LLL:EXT:yahooweather/locallang_db.xml:flexform_cacheTime</label>
+              <config>
+                <type>select</type>
+                <items type="array">
+                <numIndex index="0" type="array">
+                    <numIndex index="0">Typoscript</numIndex>
+                    <numIndex index="1">Typoscript</numIndex>
+                  </numIndex>
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">15</numIndex>
+                    <numIndex index="1">15</numIndex>
+                  </numIndex>
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">30</numIndex>
+                    <numIndex index="1">30</numIndex>
+                  </numIndex>
+                   <numIndex index="3" type="array">
+                    <numIndex index="0">45</numIndex>
+                    <numIndex index="1">45</numIndex>
+                  </numIndex>
+                   <numIndex index="4" type="array">
+                    <numIndex index="0">60</numIndex>
+                    <numIndex index="1">60</numIndex>
+                  </numIndex>
+                   <numIndex index="5" type="array">
+                    <numIndex index="0">120</numIndex>
+                    <numIndex index="1">120</numIndex>
+                  </numIndex>
+                </items>   
+                <maxitems>1</maxitems>
+                <size>1</size>
+              </config>
+            </TCEforms>
+          </cacheTime> 
+          <cleanCache>
+            <TCEforms>
+              <label>LLL:EXT:yahooweather/locallang_db.xml:flexform_clearCache</label>
+              <config>
+                <type>select</type>
+                <items type="array">
+                <numIndex index="0" type="array">
+                    <numIndex index="0">Typoscript</numIndex>
+                    <numIndex index="1">Typoscript</numIndex>
+                  </numIndex>
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">1</numIndex>
+                    <numIndex index="1">1</numIndex>
+                  </numIndex>
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">2</numIndex>
+                    <numIndex index="1">2</numIndex>
+                  </numIndex>
+                   <numIndex index="3" type="array">
+                    <numIndex index="0">4</numIndex>
+                    <numIndex index="1">4</numIndex>
+                  </numIndex>
+                   <numIndex index="4" type="array">
+                    <numIndex index="0">8</numIndex>
+                    <numIndex index="1">8</numIndex>
+                  </numIndex>
+                   <numIndex index="5" type="array">
+                    <numIndex index="0">16</numIndex>
+                    <numIndex index="1">16</numIndex>
+                  </numIndex>
+                </items>   
+                <maxitems>1</maxitems>
+                <size>1</size>
+              </config>
+            </TCEforms>
+          </cleanCache> 
+          <timeout>
+            <TCEforms>
+              <label>LLL:EXT:yahooweather/locallang_db.xml:flexform_timeout</label>
+              <config>
+                <type>select</type>
+                <items type="array">
+                	 <numIndex index="0" type="array">
+                    <numIndex index="0">Typoscript</numIndex>
+                    <numIndex index="1">Typoscript</numIndex>
+                  </numIndex>
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">2</numIndex>
+                    <numIndex index="1">5</numIndex>
+                  </numIndex>
+                  <numIndex index="2" type="array">
+                    <numIndex index="0">5</numIndex>
+                    <numIndex index="1">5</numIndex>
+                  </numIndex>
+                  <numIndex index="3" type="array">
+                    <numIndex index="0">10</numIndex>
+                    <numIndex index="1">10</numIndex>
+                  </numIndex>
+                  <numIndex index="4" type="array">
+                    <numIndex index="0">30</numIndex>
+                    <numIndex index="1">30</numIndex>
+                  </numIndex>
+                </items>   
+                <maxitems>1</maxitems>
+                <size>1</size>
+              </config>
+            </TCEforms>
+          </timeout> 
+        </el>
+      </ROOT>
+    </adminoptions>
+  </sheets>
+</T3DataStructure>

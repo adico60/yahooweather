@@ -1,0 +1,15 @@
+plugin.tx_yahooweather_pi1 {
+	templateFile = EXT:yahooweather/template/template.html
+	removeWrapInBaseClass = 0
+	cacheTime = 60
+	enableCache = true
+	cleanCache = 2
+	unit = c
+	timeFormat = 24
+	dateFormat = d.m.Y
+	location = 781788
+	imagePath = http://l.yimg.com/a/i/us/we/52/
+	imageExt = gif
+	timeout = 5
+}
+page.includeCSS.yahooweather = EXT:yahooweather/res/yahooweather.css

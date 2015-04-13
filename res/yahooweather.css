@@ -1,0 +1,14 @@
+        .yahooweather {
+                background: transparent;
+                padding: 0 25px;
+                width: 100%;
+        }
+        .yahooweather a {
+                border: none;
+        }
+        .yahooweather .weatherImage {
+                float: left;
+        }
+        .yahooweather .weatherText {
+                float: right;
+        }
