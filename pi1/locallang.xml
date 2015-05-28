@@ -221,8 +221,8 @@
 			<label index="wind_direction_label">Direction du vent</label>
 			<label index="humidity_label">Taux d'humidité</label>
 			<label index="visibility_label">Visibilité</label>
-			<label index="sunrise_label">Lever du soleil</label>
-			<label index="sunset_label">Coucher du soleil</label>
+			<label index="sunrise_label">Coucher du soleil</label>
+			<label index="sunset_label">Lever du soleil</label>
 
 			<label index="weather_code_0">Tornade</label>
 			<label index="weather_code_1">Tempête Tropicale</label>
